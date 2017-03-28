@@ -6,10 +6,10 @@ Here is the simplest algorithm I came up with (naive approach), using brute forc
 arr := [arr of elements]
 common_hash := {empty_hash}
 
-for i := 0 to length(arr):
+for i := 0 to length(arr) - 1:
   comm_index := [empty_arr]
   
-  for j := 0 to length(arr):
+  for j := 0 to length(arr) - 1:
     if arr[i] equals arr[j]:
       comm_index.append(i)
     endif
@@ -24,4 +24,4 @@ To retrieve a `value` (position of occurence) for `key`, we can do something lik
 
 In this approach, I use a hashmap to store keys and values corresponding to the `element` and the `indices` where it reoccurs. For example, for an array that looks like `[1,2,3,4,1]`, `common_hash` would look like `{1: [0, 4]}`
 
-This can be optimized as well by changing the second loop as: `for j := i to length(arr):`
+This can be optimized as well by changing the second loop as: `for j := i to length(arr) - 1:`
