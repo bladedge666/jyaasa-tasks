@@ -1,0 +1,5 @@
+### Here is a simple algorithm I came up with for this particular problem:
+1. The info about salary is available only in `List3`. So, filter the list by extracting those `number`s of employees who have salary greater than NPR 25000. Copy the result in a new list `templist3`.
+2. Then we look at `List1`. Here we can see that we can filter the list if we have any of these fields: `number`, `name`, `occupation`, `department`. We use the `number`s that we extracted to `templist3`. We match the `number`s of employees in `templist3` with `List1` and copy the result with relevant fields (number, name, salary, department) to `templist1` 
+3. We need one more field: the `address` that can be found only in `List2`. We can compare using either `number` or `name`, and extract the `address` field as well. Now, we create a new list that will contain the details of employees regarding the following fields: `name`, `address`, `department`, `salary`
+4. It's done. We stop here.
