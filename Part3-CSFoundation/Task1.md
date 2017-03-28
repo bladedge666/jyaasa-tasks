@@ -1,0 +1,6 @@
+### Binary Search:
+Binary search is a searching algorithm which is used on a sorted array. It is of particular interest in computer science as it is the best way to search for an element in a sorted array and has the time complexity of `O(log n)` for the worst case scenario.
+
+Let's think of binary search algorithm as a black box. Then the inputs will be a sorted array and a variable, say `x` denoting the element to be searched for. Then, the output can be either messages like "Found" (with index) or "Not Found" (upto the programmer to implement).
+
+ The main idea in binary search is to first look for the middle-positioned value in the array. If that is the element we seek, we return. Else, if `x` is less than the mid-value, then we discard the right-half of the array and update the index positions for next iteration. If `x` is greater than the mid-value, we discard the left-half of the array. Then, we update the index positions. This process is repeated until `x` is found in the array or to the last iteration if `x` is not found in the array.
