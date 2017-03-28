@@ -21,4 +21,3 @@ Thus, for `N = 4987`,
 `M = 2494`
 
 Hence, the Number of games played by winner by the time winner is determined varies from 1 to 2494.
----
